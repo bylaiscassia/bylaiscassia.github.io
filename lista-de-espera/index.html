@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Lista de espera do curso · Laís Cassia</title>
+<meta name="description" content="Entre na lista de espera do curso de UGC da Laís Cassia e fique sabendo do lançamento em primeira mão, com desconto especial.">
+<meta property="og:title" content="Lista de espera do curso · Laís Cassia">
+<meta property="og:description" content="Fique sabendo do lançamento em primeira mão, com desconto especial.">
+<meta property="og:image" content="https://bylaiscassia.com.br/img/lais-carmim.jpg">
+<meta name="theme-color" content="#F7F2EA">
+<link rel="icon" href="/img/icon.jpg">
+<link rel="preload" href="/fonts/manrope-300.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/urbanist-300.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/site.css?v=1794712552">
+<style>
+.le-hero{display:flex;flex-direction:column;align-items:center;text-align:center;margin-top:8px}
+.le-hero .arch{width:132px;height:166px;border-radius:66px 66px 10px 10px}
+.le-hero .eyebrow{margin-top:22px;color:var(--carmim)}
+.le-hero h1{font-size:40px;line-height:1.05;margin-top:12px}
+.le-hero h1 em{font-family:var(--script);font-style:normal;color:var(--carmim);font-size:1.2em;font-weight:400}
+.le-hero p{color:var(--muted);margin:14px 0 0;max-width:38ch}
+.perks{list-style:none;padding:0;margin:22px 0 0;display:flex;flex-direction:column;gap:10px;width:100%}
+.perks li{display:flex;align-items:center;gap:12px;padding:14px 18px;border:1px solid var(--line);border-radius:16px;background:var(--card);font-size:14.5px;text-align:left}
+.perks svg{width:20px;height:20px;flex:none;color:var(--carmim)}
+.le-form{margin-top:30px;display:flex;flex-direction:column;gap:18px}
+.fld label,.fld .lb{display:block;font:500 11px/1 var(--sans);letter-spacing:.18em;text-transform:uppercase;color:var(--ink);margin-bottom:9px}
+.fld .opt{color:var(--gray);letter-spacing:.1em;text-transform:none;font-weight:400;font-size:12px;margin-left:6px}
+.fld input[type=text],.fld input[type=email],.fld input[type=tel],.fld textarea{width:100%;font:300 16px/1.4 var(--sans);color:var(--ink);background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 16px;outline:none;transition:border-color .15s ease,box-shadow .15s ease;-webkit-appearance:none}
+.fld textarea{min-height:96px;resize:vertical}
+.fld input:focus,.fld textarea:focus{border-color:var(--carmim);box-shadow:0 0 0 3px rgba(92,31,46,.08)}
+.fld .hint{font-size:12.5px;color:var(--muted);margin-top:7px}
+.chips{display:flex;flex-direction:column;gap:8px}
+.chips label{display:flex;align-items:center;gap:12px;margin:0;padding:13px 16px;border:1px solid var(--line);border-radius:14px;background:var(--card);font:300 15px/1.3 var(--sans);letter-spacing:0;text-transform:none;cursor:pointer;transition:border-color .15s ease,background .15s ease}
+.chips input{accent-color:var(--carmim);width:17px;height:17px;margin:0;flex:none}
+.chips label:has(input:checked){border-color:var(--carmim);background:#fff}
+.consent{display:flex;gap:12px;align-items:flex-start;font-size:13.5px;line-height:1.5;color:var(--ink);padding:16px;border-radius:14px;background:var(--soft)}
+.consent input{accent-color:var(--carmim);width:18px;height:18px;margin:2px 0 0;flex:none}
+.consent a{color:var(--carmim)}
+.hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+.send{display:flex;align-items:center;justify-content:center;gap:10px;width:100%;padding:17px 22px;border-radius:999px;border:1px solid var(--carmim);background:var(--carmim);color:#F7F2EA;font:500 15px/1.2 var(--sans);letter-spacing:.03em;cursor:pointer;transition:background .15s ease,transform .15s ease}
+.send:hover{background:var(--carmim-2);transform:translateY(-1px)}
+.send[disabled]{opacity:.6;cursor:default;transform:none}
+.send svg{width:18px;height:18px}
+.err{display:none;color:var(--carmim);font-size:13px;margin-top:-6px}
+.err.on{display:block}
+.fine{font-size:12px;line-height:1.55;color:var(--muted);text-align:center;margin:4px 0 0}
+.fine a{color:var(--muted)}
+.done{display:none;text-align:center;margin-top:34px;padding:34px 22px;border:1px solid var(--line);border-radius:22px;background:var(--card)}
+.done.on{display:block}
+.done .sc{font:400 46px/1 var(--script);color:var(--carmim)}
+.done h2{font-size:26px;margin-top:8px}
+.done p{color:var(--muted);margin:12px auto 22px;max-width:34ch}
+.done .btn{max-width:none;justify-content:center}
+</style>
+</head>
+<body>
+<main class="wrap">
+  <div class="top"><a class="back" href="/"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M15 5l-7 7 7 7"/></svg>Início</a><span class="eyebrow">By Laís Cassia</span></div>
+
+  <header class="le-hero">
+    <div class="arch"><img src="/img/lais-carmim.jpg" alt="Laís Cassia" width="640" height="800"></div>
+    <span class="eyebrow">Curso de UGC · em breve</span>
+    <h1>Lista de <em>espera</em></h1>
+    <p>Estou preparando um curso completo pra quem quer começar no UGC ou já começou e travou. Com materiais e exercícios práticos, do jeito que funcionou comigo.</p>
+    <ul class="perks">
+      <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 3v2M5.6 5.6l1.4 1.4M3 12h2M18.4 5.6 17 7M21 12h-2"/><path d="M8 14a4 4 0 1 1 8 0c0 1.6-1 2.6-1.8 3.4-.5.5-.7 1-.7 1.6h-3c0-.6-.2-1.1-.7-1.6C9 16.6 8 15.6 8 14z"/><path d="M10.5 21h3"/></svg>Você fica sabendo do lançamento em primeira mão</li>
+      <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 7h16v3a2 2 0 0 0 0 4v3H4v-3a2 2 0 0 0 0-4z"/><path d="M14 7v10" stroke-dasharray="2 2"/></svg>E entra com um desconto especial, só da lista</li>
+    </ul>
+  </header>
+
+  <form class="le-form" id="le" novalidate>
+    <div class="fld">
+      <label for="nome">Nome</label>
+      <input type="text" id="nome" name="nome" autocomplete="given-name" required maxlength="80" placeholder="Como você gosta de ser chamada">
+    </div>
+    <div class="fld">
+      <label for="email">E-mail</label>
+      <input type="email" id="email" name="email" autocomplete="email" required maxlength="120" placeholder="seuemail@exemplo.com">
+    </div>
+    <div class="fld">
+      <label for="whats">WhatsApp <span class="opt">opcional</span></label>
+      <input type="tel" id="whats" name="whats" autocomplete="tel" maxlength="20" placeholder="(21) 90000-0000">
+      <div class="hint">Só pra te avisar quando o curso abrir.</div>
+    </div>
+    <div class="fld">
+      <label for="insta">Instagram <span class="opt">opcional</span></label>
+      <input type="text" id="insta" name="insta" maxlength="40" placeholder="@seuperfil" autocapitalize="off">
+    </div>
+    <div class="fld">
+      <span class="lb" id="fase-lb">Em que fase você está no UGC?</span>
+      <div class="chips" role="radiogroup" aria-labelledby="fase-lb">
+        <label><input type="radio" name="fase" value="Ainda não comecei" required>Ainda não comecei</label>
+        <label><input type="radio" name="fase" value="Comecei, mas ainda não fechei campanha">Comecei, mas ainda não fechei campanha</label>
+        <label><input type="radio" name="fase" value="Já fechei algumas campanhas">Já fechei algumas campanhas</label>
+        <label><input type="radio" name="fase" value="Já vivo de UGC">Já vivo de UGC</label>
+      </div>
+    </div>
+    <div class="fld">
+      <label for="trava">O que mais te trava hoje? <span class="opt">opcional</span></label>
+      <textarea id="trava" name="trava" maxlength="500" placeholder="Pode falar à vontade. Eu leio tudo e isso me ajuda a montar o curso."></textarea>
+    </div>
+    <div class="hp" aria-hidden="true"><label for="site">Site</label><input type="text" id="site" name="site" tabindex="-1" autocomplete="off"></div>
+    <label class="consent"><input type="checkbox" id="ok" name="ok" required><span>Tenho 18 anos ou mais e autorizo a Laís Cassia a usar estes dados pra me avisar sobre o curso, por e-mail e WhatsApp, como explicado na <a href="/privacidade/" target="_blank">Política de Privacidade</a>. Posso sair da lista quando quiser.</span></label>
+    <p class="err" id="err" role="alert"></p>
+    <button class="send" type="submit" id="send">Quero entrar na lista<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+    <p class="fine">Seus dados ficam guardados com segurança e não são vendidos nem repassados. Pra ver, corrigir ou apagar o que você enviou, escreva pra <a href="mailto:laiscassia.ugc@gmail.com">laiscassia.ugc@gmail.com</a>.</p>
+  </form>
+
+  <section class="done" id="done" aria-live="polite">
+    <div class="sc">pronto</div>
+    <h2>Você está na lista</h2>
+    <p>Assim que o curso abrir, você fica sabendo antes de todo mundo. Enquanto isso, a gente se vê por lá no Instagram.</p>
+    <a class="btn primary" href="https://www.instagram.com/bylaiscassia/" target="_blank" rel="noopener"><span>Seguir @bylaiscassia</span></a>
+  </section>
+
+  <div class="sign"><a href="https://www.instagram.com/bylaiscassia/" target="_blank" rel="noopener">@bylaiscassia</a></div>
+</main>
+<script>
+(function(){
+  // Respostas vão para o Google Formulário "Lista de espera do curso (respostas do site)" da conta laiscassia.ugc
+  var ACTION = "https://docs.google.com/forms/d/e/1FAIpQLSeX8ZAr05WOL1irawOjzQT0nPJY2T-Do5wsH9Igo_57hYb90A/formResponse";
+  var F = {nome:"entry.1827729369", email:"entry.1784463120", whats:"entry.701915246", insta:"entry.764048454",
+           fase:"entry.2011528974", trava:"entry.706346918", origem:"entry.1566010293", consent:"entry.629893627"};
+  var POLITICA = "v1 de 15/11/2026";
+
+  var form = document.getElementById("le"), err = document.getElementById("err"), btn = document.getElementById("send");
+  var q = new URLSearchParams(location.search);
+  var origem = q.get("origem") || q.get("utm_source") || "";
+  if (!origem) { try { origem = document.referrer ? new URL(document.referrer).hostname : "direto"; } catch (e) { origem = "direto"; } }
+  if (q.get("utm_campaign")) origem += " / " + q.get("utm_campaign");
+
+  function fail(msg, el){ err.textContent = msg; err.classList.add("on"); if (el) el.focus(); }
+
+  form.addEventListener("submit", function(ev){
+    ev.preventDefault(); err.classList.remove("on");
+    if (form.site.value) return; // robô
+    var nome = form.nome.value.trim(), email = form.email.value.trim();
+    var fase = (form.querySelector('input[name="fase"]:checked') || {}).value;
+    if (!nome) return fail("Me conta seu nome.", form.nome);
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(email)) return fail("Confere o seu e-mail, por favor.", form.email);
+    if (!fase) return fail("Escolhe a fase em que você está no UGC.");
+    if (!form.ok.checked) return fail("Pra entrar na lista, preciso da sua autorização no quadrinho acima.", form.ok);
+
+    var data = new URLSearchParams();
+    data.append(F.nome, nome);
+    data.append(F.email, email);
+    data.append(F.whats, form.whats.value.trim());
+    data.append(F.insta, form.insta.value.trim().replace(/^([^@])/, "@$1"));
+    data.append(F.fase, fase);
+    data.append(F.trava, form.trava.value.trim());
+    data.append(F.origem, origem.slice(0, 120));
+    data.append(F.consent, "Sim, autorizado em " + new Date().toLocaleString("pt-BR") + " · política " + POLITICA);
+
+    btn.disabled = true; btn.firstChild.textContent = "Enviando...";
+    fetch(ACTION, {method: "POST", mode: "no-cors", body: data}).then(function(){
+      form.style.display = "none";
+      document.getElementById("done").classList.add("on");
+      window.scrollTo({top: 0, behavior: "smooth"});
+    }).catch(function(){
+      btn.disabled = false; btn.firstChild.textContent = "Quero entrar na lista";
+      fail("Não consegui enviar agora. Confere a sua internet e tenta de novo, ou me escreve em laiscassia.ugc@gmail.com.");
+    });
+  });
+})();
+</script>
+</body>
+</html>
