@@ -189,7 +189,7 @@ details.niche[hidden]{display:none}
 
 /* logos e marcas */
 .logos{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin:28px 0 0}
-@media(min-width:560px){.logos{grid-template-columns:repeat(3,1fr)}}
+@media(min-width:560px){.logos{grid-template-columns:repeat(5,1fr)}.logo{height:78px;padding:14px}}
 .logo{margin:0;height:86px;border-radius:16px;background:#fff;border:1px solid var(--line);display:flex;align-items:center;justify-content:center;padding:18px 22px}
 .logo img{max-height:38px;max-width:100%;width:auto;object-fit:contain}
 .logo.txt{font:400 20px/1.2 var(--serif);color:var(--carmim)}
