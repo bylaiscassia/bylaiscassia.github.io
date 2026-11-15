@@ -21,7 +21,7 @@
   <p class="page-sub">Marcas que eu uso no dia a dia, com desconto pelo meu link e/ou cupom.</p>
 
   <a class="qf big" id="qf" href="https://quei.ma/c/2j8c57a9d8ba3" target="_blank" rel="noopener" hidden>
-    <span class="qtop"><span class="qtag" data-q="tag">Só de 16 a 18/11</span><span class="qtimer" data-q="timer"></span></span>
+    <span class="qtop"><span class="qtag" data-q="tag">Só até quarta</span><span class="qtimer" data-q="timer"></span></span>
     <span class="qtitle"><span class="fire">🔥</span>Queima Friday</span>
     <span class="qoff">40% OFF no plano anual da Queima Diária</span>
     <span class="qsub">Treino em casa, na TV da sala, em menos de 20 minutos. É o que eu faço entre uma gravação e outra.</span>
@@ -29,9 +29,12 @@
   </a>
 
   <div class="cplist">
-  <details class="cp">
+  <details class="cp" data-qnormal>
     <summary><span class="ct"><b>Queima Diária</b><span class="badge">15% OFF</span></span><span class="chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 9l6 6 6-6"/></svg></span></summary>
     <div class="inner"><p>Treino em casa, na TV da sala, em menos de 20 minutos. É o que eu faço entre uma gravação e outra.</p><a class="btn outline" href="https://quei.ma/c/2j8c57a9d8ba3" target="_blank" rel="noopener"><span class="lbl">Quero meu desconto</span><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
+  </details><details class="cp">
+    <summary><span class="ct"><b>Dermage</b><span class="badge">10% OFF</span></span><span class="chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 9l6 6 6-6"/></svg></span></summary>
+    <div class="inner"><p>Dermocosméticos e proteção solar com 10% de desconto no site usando o meu cupom.</p><button class="code" type="button" data-code="BLZ"><span>BLZ</span><small>copiar</small></button><a class="btn outline" href="https://www.dermage.com.br/" target="_blank" rel="noopener"><span class="lbl">Ir para o site</span><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
   </details><details class="cp">
     <summary><span class="ct"><b>Bembelita</b><span class="badge">Cupom</span></span><span class="chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 9l6 6 6-6"/></svg></span></summary>
     <div class="inner"><p>Chocolate com colágeno Verisol, vitaminas e biotina. O meu autocuidado mais gostoso do dia.</p><button class="code" type="button" data-code="LAISCASSIA"><span>LAISCASSIA</span><small>copiar</small></button><a class="btn outline" href="https://soubembelita.com.br/?influ=laiscassia" target="_blank" rel="noopener"><span class="lbl">Ir para o site</span><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
@@ -47,16 +50,18 @@
 (function(){
   var el=document.getElementById("qf"); if(!el) return;
   var ini=new Date("2026-11-16T00:00:00-03:00"), fim=new Date("2026-11-19T00:00:00-03:00");
-  if(new Date()>=fim) return;
+  var agora=new Date();
+  if(agora<ini||agora>=fim) return;
   el.hidden=false;
+  document.querySelectorAll("[data-qnormal]").forEach(function(n){n.hidden=true;});
   var tag=el.querySelector('[data-q="tag"]'), tm=el.querySelector('[data-q="timer"]');
   function p(n){return String(n).padStart(2,"0")}
   function tick(){
     var now=new Date(), alvo=now<ini?ini:fim, s=Math.max(0,Math.floor((alvo-now)/1000));
     if(now>=fim){el.hidden=true;return}
     var d=Math.floor(s/86400),h=Math.floor(s%86400/3600),m=Math.floor(s%3600/60),ss=s%60;
-    tag.textContent = now<ini ? "Começa segunda" : "Só até quarta";
-    tm.textContent = (now<ini?"abre em ":"acaba em ")+(d?d+"d ":"")+p(h)+"h "+p(m)+"m "+p(ss)+"s";
+    tag.textContent = "Só até quarta";
+    tm.textContent = "acaba em "+(d?d+"d ":"")+p(h)+"h "+p(m)+"m "+p(ss)+"s";
   }
   tick(); setInterval(tick,1000);
 })();

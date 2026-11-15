@@ -226,3 +226,5 @@ details.cp .inner p{color:var(--muted);font-size:15px;margin:0 0 16px}
 details.cp .code{display:inline-flex;align-items:center;gap:10px;margin:0 0 14px;font:600 13px/1 var(--sans);letter-spacing:.14em;border:1px dashed var(--carmim);color:var(--carmim);padding:11px 14px;border-radius:10px;background:transparent;cursor:pointer}
 details.cp .btn{padding:14px 20px}
 .hero .proof{margin:12px 0 0;font-size:13px}
+.logo.sq img{max-height:64px}
+.qf[hidden],details.cp[hidden]{display:none!important}

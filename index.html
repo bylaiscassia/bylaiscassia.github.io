@@ -29,7 +29,7 @@
   </header>
 
   <a class="qf" id="qf" href="https://quei.ma/c/2j8c57a9d8ba3" target="_blank" rel="noopener" hidden>
-    <span class="qtop"><span class="qtag" data-q="tag">Só de 16 a 18/11</span><span class="qtimer" data-q="timer"></span></span>
+    <span class="qtop"><span class="qtag" data-q="tag">Só até quarta</span><span class="qtimer" data-q="timer"></span></span>
     <span class="qtitle"><span class="fire">🔥</span>Queima Friday</span>
     <span class="qoff">40% OFF no plano anual da Queima Diária</span>
     <span class="qsub">Treino em casa, na TV da sala, em menos de 20 minutos. É o que eu faço entre uma gravação e outra.</span>
@@ -59,16 +59,18 @@
 (function(){
   var el=document.getElementById("qf"); if(!el) return;
   var ini=new Date("2026-11-16T00:00:00-03:00"), fim=new Date("2026-11-19T00:00:00-03:00");
-  if(new Date()>=fim) return;
+  var agora=new Date();
+  if(agora<ini||agora>=fim) return;
   el.hidden=false;
+  document.querySelectorAll("[data-qnormal]").forEach(function(n){n.hidden=true;});
   var tag=el.querySelector('[data-q="tag"]'), tm=el.querySelector('[data-q="timer"]');
   function p(n){return String(n).padStart(2,"0")}
   function tick(){
     var now=new Date(), alvo=now<ini?ini:fim, s=Math.max(0,Math.floor((alvo-now)/1000));
     if(now>=fim){el.hidden=true;return}
     var d=Math.floor(s/86400),h=Math.floor(s%86400/3600),m=Math.floor(s%3600/60),ss=s%60;
-    tag.textContent = now<ini ? "Começa segunda" : "Só até quarta";
-    tm.textContent = (now<ini?"abre em ":"acaba em ")+(d?d+"d ":"")+p(h)+"h "+p(m)+"m "+p(ss)+"s";
+    tag.textContent = "Só até quarta";
+    tm.textContent = "acaba em "+(d?d+"d ":"")+p(h)+"h "+p(m)+"m "+p(ss)+"s";
   }
   tick(); setInterval(tick,1000);
 })();
