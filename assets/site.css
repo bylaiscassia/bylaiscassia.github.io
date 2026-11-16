@@ -237,3 +237,9 @@ details.cp .btn{padding:14px 20px}
 .sdb small{display:block;font-size:14px;line-height:1.5;color:rgba(255,255,255,.78)}
 .sdb-btn{display:inline-flex;align-items:center;gap:8px;margin-top:16px;padding:11px 18px;border-radius:999px;background:#fff;color:var(--carmim);font:500 14px/1 var(--sans)}
 .sdb-btn .ic{width:16px;height:16px}
+
+/* Para creators em destaque + card do Site da Bio dentro do bloco */
+.creators>.eyebrow{display:inline-flex;align-items:center;gap:8px;padding:8px 15px;border-radius:999px;background:var(--carmim);color:#F7F2EA;font:600 11px/1 var(--sans);letter-spacing:.3em;box-shadow:0 10px 22px -14px rgba(92,31,46,.8)}
+.creators>.eyebrow::before{content:"";width:6px;height:6px;border-radius:50%;background:#F3D9DF}
+.creators .sdb{margin:18px 0 26px}
+.creators h2#cr{margin-top:0}
