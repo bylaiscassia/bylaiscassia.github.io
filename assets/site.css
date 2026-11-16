@@ -228,3 +228,12 @@ details.cp .btn{padding:14px 20px}
 .qf[hidden],details.cp[hidden]{display:none!important}
 .qf .qtitle>span:last-child{display:flex;flex-direction:column}
 .qf .qtitle small{font:800 .52em/1.1 var(--sans);letter-spacing:.06em;margin-top:2px}
+
+/* card do Site da Bio (produto) */
+.sdb{display:block;margin-top:40px;padding:24px 22px 22px;border-radius:22px;background:var(--carmim);color:#fff;text-decoration:none;text-align:left;box-shadow:0 22px 40px -26px rgba(92,31,46,.9);transition:transform .15s ease}
+.sdb:hover{transform:translateY(-2px)}
+.sdb-tag{display:inline-block;font:500 10px/1 var(--sans);letter-spacing:.28em;text-transform:uppercase;color:#F3D9DF}
+.sdb b{display:block;font:300 25px/1.15 var(--serif);margin:12px 0 6px;color:#fff}
+.sdb small{display:block;font-size:14px;line-height:1.5;color:rgba(255,255,255,.78)}
+.sdb-btn{display:inline-flex;align-items:center;gap:8px;margin-top:16px;padding:11px 18px;border-radius:999px;background:#fff;color:var(--carmim);font:500 14px/1 var(--sans)}
+.sdb-btn .ic{width:16px;height:16px}
